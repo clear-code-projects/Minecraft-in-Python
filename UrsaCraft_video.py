@@ -26,6 +26,7 @@ def update():
 	if held_keys['2']: block_pick = 2
 	if held_keys['3']: block_pick = 3
 	if held_keys['4']: block_pick = 4
+	if held_keys['escape']: sys.exit()
 
 class Voxel(Button):
 	def __init__(self, position = (0,0,0), texture = grass_texture):
